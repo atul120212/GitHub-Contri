@@ -5,17 +5,18 @@
   "scripts": {
     "validate": "node scripts/validate-cards.js",
     "validate:pr": "node scripts/validate-pr.js",
-    "site:install": "cd site && npm install",
-    "dev": "cd site && npm run dev",
-    "build": "npm run validate && cd site && npm run build",
-    "preview": "cd site && npm run preview"
+    "site:install": "npm --prefix site install",
+    "dev": "npm --prefix site run dev",
+    "build": "node scripts/validate-cards.js && npm --prefix site run build",
+    "preview": "npm --prefix site run preview"
   },
   "keywords": [
     "open-source",
     "first-timers",
     "good-first-issue",
     "contributor-card",
-    "github-actions"
+    "github-actions",
+    "vercel"
   ],
   "author": "Community Contributors",
   "license": "MIT"

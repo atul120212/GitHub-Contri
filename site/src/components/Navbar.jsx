@@ -43,7 +43,7 @@ export default function Navbar({ onOpenGenerator, onOpenHowTo, contributorCount 
           </button>
 
           <a
-            href="https://github.com"
+            href="https://github.com/CoderCorps/GitHub-Contri"
             target="_blank"
             rel="noreferrer"
             className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg transition-colors"

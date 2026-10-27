@@ -25,7 +25,7 @@ export default function Footer({ onOpenHowTo, onOpenGenerator }) {
             Card Maker
           </button>
           <a 
-            href="https://github.com" 
+            href="https://github.com/CoderCorps/GitHub-Contri" 
             target="_blank" 
             rel="noreferrer" 
             className="hover:text-emerald-400 transition-colors flex items-center gap-1"

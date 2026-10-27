@@ -1,6 +1,7 @@
 # 🌟 Open Source Contributor Wall
 
-[![CI Validation](https://github.com/your-org/GitHub-Contri/actions/workflows/validate.yml/badge.svg)](https://github.com/your-org/GitHub-Contri/actions/workflows/validate.yml)
+[![CI Validation](https://github.com/CoderCorps/GitHub-Contri/actions/workflows/validate.yml/badge.svg)](https://github.com/CoderCorps/GitHub-Contri/actions/workflows/validate.yml)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FCoderCorps%2FGitHub-Contri)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Good First Issue](https://img.shields.io/badge/good%20first%20pr-friendly-blue.svg)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
