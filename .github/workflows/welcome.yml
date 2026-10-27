@@ -1,0 +1,51 @@
+name: Welcome First-Time Contributors
+
+on:
+  pull_requests:
+    types: [opened]
+
+jobs:
+  welcome:
+    name: Greet Contributor
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Welcome comment & label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const author = context.payload.pull_request.user.login;
+            const prNumber = context.issue.number;
+
+            const welcomeMessage = `### 👋 Welcome @${author}! Thanks for making your first contribution!
+            
+            We are super excited to have you join our open source community. 🎉
+            
+            **What happens next?**
+            1. ⚙️ Our automated CI checks are currently validating your card JSON against \`schema/card.schema.json\`.
+            2. 🔍 If all checks pass green, a maintainer will review and merge your PR.
+            3. 🚀 Once merged, the site will automatically redeploy and **your card will appear live on the website**!
+            
+            _Tip: You can preview your card anytime using the card generator on the live site!_`;
+
+            // Post welcome comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: welcomeMessage
+            });
+
+            // Add label
+            try {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                labels: ['good-first-pr', 'community-card']
+              });
+            } catch (err) {
+              console.log('Notice: Could not add labels (label may need to be created first in repo):', err.message);
+            }

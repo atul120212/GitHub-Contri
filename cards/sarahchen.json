@@ -1,0 +1,13 @@
+{
+  "name": "Sarah Chen",
+  "github": "sarahchen",
+  "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=250&auto=format&fit=crop&q=80",
+  "bio": "Frontend designer & developer passionate about micro-interactions and design systems.",
+  "skills": ["TypeScript", "Next.js", "Figma", "TailwindCSS", "Astro"],
+  "links": {
+    "linkedin": "https://linkedin.com/in/sarahchen-design",
+    "blog": "https://sarahchen.hashnode.dev"
+  },
+  "firstPR": "joined via PR #12",
+  "joinedDate": "2026-03-01"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Jane Doe",
+  "github": "janedoe",
+  "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=250&auto=format&fit=crop&q=80",
+  "bio": "Learning web dev, building responsive accessible UIs, and love cats!",
+  "skills": ["HTML", "CSS", "Git", "React", "TailwindCSS"],
+  "links": {
+    "linkedin": "https://linkedin.com/in/janedoe-example",
+    "portfolio": "https://janedoe.dev"
+  },
+  "firstPR": "joined via PR #1",
+  "joinedDate": "2026-01-15"
+}

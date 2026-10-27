@@ -1,0 +1,13 @@
+{
+  "name": "Alex Rivera",
+  "github": "alexrivera",
+  "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=250&auto=format&fit=crop&q=80",
+  "bio": "CS freshman curious about Open Source, Python tooling, and backend APIs.",
+  "skills": ["Python", "FastAPI", "Docker", "Git", "PostgreSQL"],
+  "links": {
+    "twitter": "https://twitter.com/alexrivera_dev",
+    "portfolio": "https://alexrivera.tech"
+  },
+  "firstPR": "joined via PR #4",
+  "joinedDate": "2026-02-10"
+}

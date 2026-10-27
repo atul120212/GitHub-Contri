@@ -1,0 +1,22 @@
+{
+  "name": "contributor-card-wall",
+  "version": "1.0.0",
+  "description": "An open source community platform where first-time contributors publish their profile card via Pull Requests.",
+  "scripts": {
+    "validate": "node scripts/validate-cards.js",
+    "validate:pr": "node scripts/validate-pr.js",
+    "site:install": "cd site && npm install",
+    "dev": "cd site && npm run dev",
+    "build": "npm run validate && cd site && npm run build",
+    "preview": "cd site && npm run preview"
+  },
+  "keywords": [
+    "open-source",
+    "first-timers",
+    "good-first-issue",
+    "contributor-card",
+    "github-actions"
+  ],
+  "author": "Community Contributors",
+  "license": "MIT"
+}
